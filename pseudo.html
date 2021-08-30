@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Box</title>
+    <style>
+        h1 {
+            color: black;
+            background-color: orange;
+        }
+
+        h1:hover {
+            color: orangered;
+            background-color: rgb(27, 25, 25);
+            transition-duration: .5s;
+            font-size: 3em;
+        }
+
+        .middle-person:focus {
+            color: orangered;
+            padding: 10px 20px;
+            font-weight: 900;
+            font-size: 20px;
+            border: 2px solid orangered;
+            transition-duration: 5s;
+            transition-delay: .1s;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+
+
+
+
+        li:first-child {
+            color: crimson;
+        }
+
+        li:last-child {
+            background-color: cyan;
+        }
+
+        li:nth-child(2n) {
+            color: darkorange
+        }
+
+        li:nth-child(2n+1) {
+            font-size: 40px;
+        }
+
+        h3::before {
+            content: 'hello: this is the before element, ';
+            background-color: orange;
+        }
+
+        h3::after {
+            content: ' this is the after element.';
+            background-color: dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is very normal</h1>
+    <input type="text">
+    <input placeholder="Write your secret topic" class="middle-person" type="text">
+    <input type="text">
+    <br><br>
+    <a href="https://www.google.com/">go to google</a>
+    <a href="https://www.youtube.com/">go to youtube</a>
+    <a href="https://www.adcombo.com/">go to adcombo</a>
+    <br><br><br>
+
+    <ul>
+        <li>Home</li>
+        <li>Menu</li>
+        <li>Blog</li>
+        <li>Aqure</li>
+        <li>About</li>
+        <li>Details</li>
+    </ul>
+    <br><br><br>
+    <h3>big boss masul bulder,,</h3>
+    <h3>big boss masul bulder,,</h3>
+    <h3>big boss masul bulder,,</h3>
+    <h3>big boss masul bulder,,</h3>
+    <h3>big boss masul bulder,,</h3>
+    <h3>big boss masul bulder,,</h3>
+
+
+    <br><br><br>
+
+
+
+
+
+</body>
+
+</html>
